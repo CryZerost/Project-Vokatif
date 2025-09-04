@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@400;600&display=swap");
+
+body {
+    background: linear-gradient(180deg, #b0e6f8 0%, #fcecd8 100%);
+    font-family: "lexend";
+    font-style: normal;
+}
+.form-logo,
+.form-logo-1 {
+    position: flex;
+    width: 100%;
+    top: 10%;
+}
+
+.form-form {
+    background: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    position: flex;
+    padding: 20px;
+    font-size: 16px;
+    max-width: 480px;
+    margin: auto;
+    margin-top: 5%;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.form-group-1 {
+    margin-bottom: 20px;
+    margin-left: 5px;
+}
+
+.form-group-2 {
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    margin-left: 10%;
+    font-weight: bold;
+}
+
+.input-1 {
+    display: block;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    /* background-color: #AFDFE6;  */
+    background-color: #d9d9d9;
+    margin-left: 10%;
+}
+
+.back-button {
+    float: right;
+    margin-top: -30px;
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+}
+
+.back-button:hover {
+    color: #19a5e2;
+}
+
+.input-3 {
+    display: block;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    /* background-color: #AFDFE6;  */
+    background-color: #d9d9d9;
+    margin-left: 10%;
+}
+
+.form-input-2 {
+    display: inline-flex;
+}
+
+.input-1:hover {
+    border: 2px solid #333;
+}
+
+button {
+    background-color: #36b8e1;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 25%;
+    margin-top: 30px;
+    margin-left: 200px;
+}
+
+button:hover {
+    background-color: #19a5e2;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.input-2 {
+    margin-top: 2px;
+    left: 43%;
+    margin-bottom: 0%;
+    display: block;
+    position: flex;
+    border: 10%;
+}
+
+.forgot-password {
+    position: relative;
+    display: table;
+    float: left;
+}
+
+p {
+    left: 44.3%;
+    top: 58.01%;
+    display: table-cell;
+}
+
+.sign-up {
+    margin-top: 20px;
+}
+
+#remember-me-1:checked + .remember-me-1 {
+    font-weight: bold;
+}

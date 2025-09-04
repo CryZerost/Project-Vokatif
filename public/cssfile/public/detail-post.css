@@ -1,0 +1,242 @@
+.detail-post.container {
+    padding: 2rem;
+}
+
+.slider-wrapper {
+    position: relative;
+    max-width: 70%;
+    margin: 0 auto 10px;
+}
+
+.slider {
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.19);
+}
+
+.slider img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+.slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.detail-post-body {
+    width: 50%;
+}
+
+.slider-nav a {
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+    opacity: 1;
+}
+
+.detail-post-info {
+    width: 100%;
+    height: 100%;
+    padding-top: 5px;
+    padding-left: 10px;
+    width: 1920px;
+    max-width: 90%;
+    overflow: auto;
+    margin: 100px auto 50px;
+}
+
+.detail-post-more-by-user {
+}
+
+.detail-post-text-group {
+    padding-left: 10px;
+    display: inline-block;
+}
+
+.detail-post-like-group {
+    display: inline-block;
+    position: absolute;
+    right: 15%;
+}
+
+.detail-post-like-group img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.detail-post-more-by {
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+    width: 1920px;
+    max-width: 90%;
+    overflow: auto;
+    margin: 0 auto 50px;
+    padding-bottom: 50px;
+}
+
+.detail-post-image {
+    position: relative;
+    width: 330px;
+    height: 210px;
+    overflow: hidden;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+.detail-post-like {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 3/2;
+    border-radius: 5px;
+}
+
+.detail-category-tag {
+    position: absolute;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    color: #36b8e1;
+    right: 10px;
+    top: 10px;
+}
+
+.btn-like-2 {
+    position: absolute;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    color: #36b8e1;
+    left: 10px;
+    top: 10px;
+    opacity: 0;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.detail-post-image:hover .detail-category-tag {
+    transition: 0.5;
+    opacity: 0;
+}
+
+.btn-like {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    width: 90%;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    border-radius: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+    opacity: 0;
+    border-radius: 5px;
+}
+
+.detail-post-image:hover .btn-like {
+    opacity: 1;
+}
+
+.detail-post-image:hover .btn-like-2 {
+    opacity: 1;
+}
+
+.detail-post-image:hover {
+    border-radius: 10px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn-like:hover {
+    background-color: #36b8e1;
+    color: #fff;
+}
+
+.btn-like-2:hover {
+    background-color: #36b8e1;
+    color: #fff;
+}
+
+.detail-post-card-2 {
+    padding: 0 10vh;
+    display: grid;
+    scroll-behavior: smooth;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+@media only screen and (max-width: 900px) {
+    .header {
+        margin: 50px 0;
+        width: 100%;
+        height: auto;
+    }
+
+    .post-category-title {
+        left: 25x;
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    .detail-post-card-2 {
+        padding: 0 10vh;
+        display: grid;
+        scroll-behavior: smooth;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .detail-post-more-by-user {
+    }
+
+    .detail-post-card-2 {
+        margin-bottom: 40px;
+        width: 480px;
+        height: 600px;
+        margin-left: 100px;
+        padding: 0 10vh;
+        display: grid;
+        scroll-behavior: smooth;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .detail-post-more-by-user {
+    }
+
+    .detail-post-card-2 {
+        flex: 0 0 auto;
+        width: 230px;
+        height: 350px;
+        margin-bottom: 150px;
+        padding: 0 10vh;
+        display: grid;
+        scroll-behavior: smooth;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

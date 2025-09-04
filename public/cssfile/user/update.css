@@ -1,0 +1,630 @@
+body {
+    background: #b0e6f8;
+}
+
+.title {
+    position: absolute;
+    width: 216px;
+    height: 36px;
+    left: 152px;
+    top: 129px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+}
+
+.profile {
+    position: absolute;
+    width: 37px;
+    height: 23px;
+    left: 177px;
+    top: 205px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 22px;
+    color: #000000;
+}
+
+
+.card {
+    position: absolute;
+    width: 443px;
+    height: 144px;
+    left: 177px;
+    top: 239px;
+    background: #fdfdfd;
+
+    border-radius: 5px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.19);
+}
+
+.profile-picture {
+    position: absolute;
+    width: 81px;
+    height: 81px;
+    object-fit: cover;
+    border-radius: 50%;
+    left: 210px;
+    top: 265px;
+    /* background:  url(path/to/profile-picture.jpg)  , #d9d9d9; */
+}
+
+.username {
+    position: absolute;
+    width: 200px;
+    height: 18px;
+    left: 316px;
+    top: 265px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 18px;
+    color: #000000;
+}
+
+.prodi {
+    position: absolute;
+    width: 200px;
+    height: 18px;
+    left: 316px;
+    top: 285px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 18px;
+    color: #000000;
+}
+
+.bio {
+    position: absolute;
+    width: 18px;
+    height: 17px;
+    left: 316px;
+    top: 319px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 16px;
+    color: #000000;
+}
+
+.bio-text {
+    position: absolute;
+    width: 310px;
+    height: 30px;
+    left: 316px;
+    top: 338px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 15px;
+    color: #000000;
+}
+
+.change-picture {
+    position: absolute;
+    width: 300px;
+    height: 23px;
+    left: 350px;
+    top: 440px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.picture-container {
+    position: absolute;
+    width: 164px;
+    height: 150px;
+    left: 177px;
+    top: 439px;
+    background: #ffffff;
+    border-radius: 10px;
+}
+
+.picture-container:hover {
+    position: absolute;
+    width: 164px;
+    height: 150px;
+    left: 177px;
+    top: 439px;
+    background: #ffffff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+}
+
+.picture-container-2 {
+    position: absolute;
+    width: 164px;
+    height: 150px;
+    left: 177px;
+    top: 439px;
+    background: #ffffff;
+    opacity: 0;
+    border-radius: 10px;
+}
+
+/* .picture-container-4 {
+    position: absolute;
+    width: 164px;
+    height: 150px;
+    left: 177px;
+    top: 439px;
+    opacity: 0;
+    border-radius: 10px;
+    z-index: 2;
+} */
+
+.picture-container-2:hover {
+    position: absolute;
+    width: 164px;
+    height: 150px;
+    left: 177px;
+    top: 439px;
+    background: #ffffff;
+    opacity: 0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.picture-container-3 {
+    position: absolute;
+    width: 164px;
+    height: 150px;
+    left: 177px;
+    top: 439px;
+    border-radius: 10px;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+    border: none;
+}
+
+.username-label {
+    position: absolute;
+    width: 77px;
+    height: 23px;
+    left: 180px;
+    top: 598px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.username-input {
+    position: absolute;
+    width: 924px;
+    height: 46px;
+    left: 179px;
+    top: 628px;
+    background: #ffffff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    border: none;
+}
+
+.prodi-label {
+    position: absolute;
+    width: 200px;
+    height: 23px;
+    left: 177px;
+    top: 700px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.prodi-input {
+    position: absolute;
+    width: 924px;
+    height: 46px;
+    left: 179px;
+    top: 732px;
+    background: #ffffff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    border: none;
+}
+
+.bio-label {
+    position: absolute;
+    width: 25px;
+    height: 23px;
+    left: 179px;
+    top: 803px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.bio-input {
+    position: absolute;
+    width: 924px;
+    height: 100px;
+    left: 179px;
+    top: 836px;
+    background: #ffffff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    border: none;
+}
+
+.name-label {
+    position: absolute;
+    width: 41px;
+    height: 23px;
+    left: 183px;
+    top: 953px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.name-input {
+    position: absolute;
+    width: 924px;
+    height: 46px;
+    left: 180px;
+    top: 994px;
+    background: #ffffff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    border: none;
+}
+
+.name-input-icon {
+    position: absolute;
+    width: 100%;
+    max-width: 20px;
+    height: auto;
+
+    left: 1070px;
+    top: 1005px;
+    border-radius: 5px;
+    border: none;
+}
+
+.email-label {
+    position: absolute;
+    width: 41px;
+    height: 23px;
+    left: 183px;
+    top: 1058px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.email-input {
+    position: absolute;
+    width: 924px;
+    height: 46px;
+    left: 180px;
+    top: 1098px;
+    background: #ffffff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    border: none;
+}
+
+.email-input-icon {
+    position: absolute;
+    width: 100%;
+    max-width: 20px;
+    height: auto;
+
+    left: 1070px;
+    top: 1110px;
+    border-radius: 5px;
+    border: none;
+}
+
+.password-label {
+    position: absolute;
+    width: 200px;
+    height: 23px;
+    left: 183px;
+    top: 1158px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.password-input {
+    position: absolute;
+    width: 924px;
+    height: 46px;
+    left: 180px;
+    top: 1198px;
+    background: #ffffff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    border: none;
+}
+
+.confirm-password-label {
+    position: absolute;
+    width: 250px;
+    height: 23px;
+    left: 183px;
+    top: 1260px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.confirm-password-input {
+    position: absolute;
+    width: 924px;
+    height: 46px;
+    left: 180px;
+    top: 1310px;
+    background: #ffffff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    border: none;
+}
+
+.save-button {
+    position: absolute;
+    width: 117px;
+    height: 40px;
+    left: 987px;
+    top: 1390px;
+    background: #ffffff;
+    border-radius: 5px;
+    border: none;
+}
+
+.save-button:hover {
+    position: absolute;
+    width: 117px;
+    height: 40px;
+    left: 987px;
+    top: 1390px;
+    background: #ffffff;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+
+.update-button {
+    position: absolute;
+    width: 117px;
+    height: 40px;
+    left: 350px;
+    top: 550px;
+    background: #ffffff;
+    border-radius: 5px;
+    border: none;
+}
+
+.update-button:hover {
+    position: absolute;
+    width: 117px;
+    height: 40px;
+    left: 350px;
+    top: 550px;
+    background: #ffffff;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+
+.delete-button {
+    position: absolute;
+    width: 117px;
+    height: 40px;
+    left: 480px;
+    top: 550px;
+    background: #ffffff;
+    border-radius: 5px;
+    border: none;
+}
+
+.delete-button:hover {
+    position: absolute;
+    width: 117px;
+    height: 40px;
+    left: 480px;
+    top: 550px;
+    background: #ffffff;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 900px) {
+    .title {
+        width: calc(50% - 5px);
+        left: 10px;
+    }
+
+    .profile {
+        width: 100%;
+        left: 10px;
+    }
+
+    .card {
+        width: calc(50% - 5px);
+        left: 10px;
+    }
+
+    .profile-picture {
+        width: calc(15% - 25px);
+        left: 60px;
+    }
+
+    .username,
+    .prodi,
+    .bio,
+    .bio-text {
+        width: calc(50% - 5px);
+        left: 180px;
+    }
+
+    .change-picture {
+        width: calc(50% - 5px);
+        left: 290px;
+    }
+
+    .picture-container,
+    .picture-container:hover,
+    .picture-container-2,
+    .picture-container-2:hover,
+    .picture-container-3 {
+        width: calc(35% - 50px);
+        left: 10px;
+    }
+
+    .username-label,
+    .prodi-label,
+    .bio-label,
+    .name-label,
+    .email-label,
+    .password-label,
+    .confirm-password-label {
+        width: 100%;
+        left: 10px;
+    }
+
+    .username-input,
+    .prodi-input,
+    .bio-input,
+    .name-input,
+    .email-input,
+    .password-input,
+    .confirm-password-input {
+        width: calc(70% - 5px);
+        left: 10px;
+    }
+
+    .update-button,
+    .update-button:hover {
+        width: calc(15% - 10px);
+        left: 310px;
+    }
+
+    .save-button,
+    .save-button:hover,
+    .delete-button,
+    .delete-button:hover {
+        width: calc(15% - 10px);
+        left: 440px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .title {
+        width: calc(50% - 5px);
+        left: 10px;
+    }
+
+    .profile {
+        width: 100%;
+        left: 10px;
+    }
+
+    .card {
+        width: calc(75% - 5px);
+        left: 10px;
+    }
+
+    .profile-picture {
+        width: calc(25% - 25px);
+        left: 60px;
+    }
+
+    .username,
+    .prodi,
+    .bio,
+    .bio-text {
+        width: calc(50% - 5px);
+        left: 180px;
+    }
+
+    .change-picture {
+        width: calc(50% - 5px);
+        left: 210px;
+    }
+
+    .picture-container,
+    .picture-container:hover,
+    .picture-container-2,
+    .picture-container-2:hover,
+    .picture-container-3 {
+        width: calc(50% - 50px);
+        left: 10px;
+    }
+
+    .username-label,
+    .prodi-label,
+    .bio-label,
+    .name-label,
+    .email-label,
+    .password-label,
+    .confirm-password-label {
+        width: 100%;
+        left: 10px;
+    }
+
+    .username-input,
+    .prodi-input,
+    .bio-input,
+    .name-input,
+    .email-input,
+    .password-input,
+    .confirm-password-input {
+        width: calc(70% - 5px);
+        left: 10px;
+    }
+
+    .update-button,
+    .update-button:hover {
+        width: calc(25% - 10px);
+        left: 210px;
+    }
+
+    .save-button,
+    .save-button:hover,
+    .delete-button,
+    .delete-button:hover {
+        width: calc(25% - 10px);
+        left: 340px;
+    }
+}

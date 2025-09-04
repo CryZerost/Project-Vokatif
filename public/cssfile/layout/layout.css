@@ -1,0 +1,339 @@
+* {
+    font-family: "Poppins";
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.layout-container {
+    background-color: #ffffff;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 3;
+}
+
+.layout-container.scrolled {
+    /* box-shadow: 0 0.75px 0.75px 0px black; */
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.19);
+}
+
+.layout-navbar {
+    width: 100%;
+    height: 10vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.layout-navbar-1 {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    display: flex;
+    margin: auto;
+}
+
+.logo-vk-1 {
+    width: 160px;
+    cursor: pointer;
+}
+
+.search-vk-1 {
+    width: 25px;
+    cursor: pointer;
+    margin: 0px 20px;
+}
+.menu-vk-1 {
+    width: 25px;
+    cursor: pointer;
+    margin: 0px 20px;
+    display: none;
+}
+
+.logout-btn-2:hover {
+    background-color: white;
+}
+
+.dots-vk-1 {
+    width: 7px;
+    cursor: pointer;
+    margin: 0px 5px;
+    display: inline-block;
+}
+
+nav {
+    flex: 1;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0px 20px;
+}
+
+nav ul li::after {
+    content: '';
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: #36b8e1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.admin-li::after {
+    content: '';
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: white;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.admin-li{
+    text-decoration: none;
+}
+
+nav ul li:hover::after {
+    transform: scaleX(1);
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #63696c;
+    font-size: 20px;
+}
+
+.nav-item-profile {
+    display: inline-block;
+    list-style: none;
+    margin: 0px 10px;
+}
+
+.nav-link-profile {
+    text-decoration: none;
+    color: #63696c;
+    font-size: 15px;
+}
+
+.nav-link-profile:hover {
+    color: #36b8e1;
+    text-decoration: dashed;
+    font-weight: bold;
+    transition: 0.5;
+}
+
+.nav-item-user {
+    display: block;
+    list-style: none;
+    margin: 0px 10px;
+    text-align: center;
+    position: relative; /* Added */
+}
+
+.nav-link-user {
+    text-decoration: none;
+    color: #63696c;
+    font-size: 15px;
+}
+
+/* ... existing CSS styles ... */
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #63696c;
+    font-size: 20px;
+}
+
+.dropdown i {
+    margin-left: 5px;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    background-color: #b2e6f8;
+    padding: 10px;
+    list-style: none;
+    margin: 0;
+    z-index: 10;
+    display: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.19);
+}
+
+.dropdown-menu li {
+    margin-bottom: 10px;
+}
+
+.dropdown-menu a {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+    width: 150px;
+}
+
+.dropdown-menu a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* ... existing CSS styles ... */
+
+.nav-logout-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 60px;
+    color: #36b8e1;
+    background-color: #b2e6f8;
+    padding: 10px;
+    z-index: 10;
+    border-radius: 10px;
+    width: 120px; /* Adjust the width as needed */
+}
+
+.nav-logout-dropdown hr {
+    border-top: 1px solid #ffffff; /* Set the color of the horizontal rule to white */
+    width: 50%;
+}
+
+.nav-logout-btn {
+    text-decoration: none;
+    color: #63696c;
+    font-size: 15px;
+    display: block;
+    padding: 5px 10px;
+}
+
+.nav-logout-btn:hover {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-item-user:hover .nav-logout-dropdown {
+    display: block;
+}
+
+/* ... remaining CSS styles ... */
+
+nav ul li a:hover {
+    color: #36b8e1;
+    text-decoration: dashed;
+    font-weight: bold;
+    transition: 0.5;
+}
+
+section {
+    padding-top: 100px;
+}
+
+.admin-res{
+    display: none;
+}
+
+@media only screen and (max-width: 1580px) {
+    .container {
+        height: 100vh;
+    }
+
+    nav ul li::after {
+        content: '';
+        display: none;
+        height: 4px;
+        width: 100%;
+        background-color: #36b8e1;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.3s ease;
+    }
+
+    nav ul {
+        width: 100%;
+        background: #b2e6f8;
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 10;
+        height: 100vh;
+    }
+
+    nav ul li {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        color: #ffffff;
+    }
+
+    .menu-vk-1, .admin-res {
+        display: block;
+
+    }
+
+    #menuList {
+        overflow: hidden;
+        transition: 0.5s;
+    }
+
+    .dropdown{
+        display: none;
+    }
+
+    #barList {
+        transition: 0.5s;
+    }
+
+    .nav-logout-btn {
+        text-decoration: none;
+        color: #63696c;
+        font-size: 12px;
+    }
+
+    .nav-logout-btn:hover {
+        text-decoration: underline;
+        font-weight: bold;
+        font-size: 12px;
+        color: #ffffff;
+    }
+
+    .nav-item-profile {
+        display: inline-block;
+        list-style: none;
+        margin: 0px 2.5px;
+    }
+
+    /* .header {
+        margin: 50px 0;
+        width: 100%;
+        height: auto;
+    } */
+}

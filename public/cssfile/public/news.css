@@ -1,0 +1,87 @@
+/* news.css */
+
+body {
+    background-color: #b0e6f8;
+}
+
+.fyp-card {
+    width: 720px;
+    height: auto;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    border-radius: 3%;
+}
+
+.fyp-card:hover {
+    background-color: #f1bb7c;
+}
+
+.user-details {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.username {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.project-details {
+    margin-top: 10px;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.category {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.body {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.posted-date {
+    font-size: 12px;
+    color: #999;
+}
+
+.project-image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin-bottom: 10px;
+    object-fit: cover;
+    aspect-ratio: 3/2;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+    .fyp-card {
+        width: 100%;
+        max-width: 400px;
+    }
+}
